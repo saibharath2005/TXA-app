@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Sources/style.css" />
+  <title>Mini-Chats</title>
+</head>
+
+<body>
+
+  <!-- <form method="GET" action="/items/new">
+    <button>New Chat</button>
+  </form> -->
+  <header>
+    <nav>
+        <ul>
+            <li><a href="/items/new" method="GET"><b>Sell</b></a></li>
+            <li><a href="#sell">Contact</a></li>
+            <li><a href="#buy">Help</a></li>
+        </ul>
+    </nav>
+</header>
+  <main>
+    <% for(let item of items){ %>
+      <div class="card">
+        <img src="<%= item.image %> " alt="Product Image" class="card-image">
+        <div class="card-body">
+          <h2 class="card-title">
+            <%= item.title %>
+          </h2>
+          <p class="card-price">Price: $<%= item.price %><br /><br /><span class="discount">Discount: 
+                <%= item.discount %> off
+              </span></p>
+          <p class="card-quantity">Quantity: <%= item.quantity %>Kg</p>
+          <form >
+            <button class="btn-primary">Add to Cart</button>
+          </form><br />
+          <button class="btn-primary">
+            <a href="/items/<%= item.id %>">View Details</a>
+          </button>
+        </div>
+      </div>
+      <% } %>
+    </main>
+  <br>
+  <footer>
+    <p>&copy; 2024 Farmers' Market. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

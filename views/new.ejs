@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Sources/style.css" />
+    <title>New Chat</title>
+</head>
+
+<body>
+    <div class="new-form">
+        <form id="create-new-form" method="post" action="/items">
+            <div class="new-image">
+                <label for="image">Image:</label>
+                <input type="text" class="new" name="image">
+            </div>
+            <div class="new-info">
+                <div class="new-title">
+                    <label for="name">Name:</label>
+                    <input type="text" class="new-title-input" name="title">
+                </div>
+                <div class="new-price">
+                    <label for="price">Price:</label>
+                    <input type="number" class="new-price-input" name="price">
+                </div>
+                <div class="card-discount">
+                    <label for="discount">Discount:</label>
+                    <input type="number" class="new-discount-input" name="discount">
+                </div>
+                <div class="new-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" class="new-quantity-input" name="quantity">
+                </div>
+            </div>
+            <button type="submit" class="new-form-button">Create Card</button>
+        </form>
+    </div>
+</body>
+
+</html>

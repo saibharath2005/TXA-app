@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Sources/new.css">
+    <title>Item Details</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-detail-container">
+            <div class="item-image">
+                <img src="<%= item.image %>" alt="Item Image">
+            </div>
+            <div class="item-info">
+                <h1>
+                    <%= item.title %>
+                </h1>
+                <p>
+                    <%= item.description %>
+                </p>
+                <div class="item-price">
+                    <span>Price:</span>
+                    <span>$<%= item.price %></span>
+                </div>
+                <div class="item-discount">
+                    <span>Discount:</span>
+                    <span>
+                        <%= item.discount %>%
+                    </span>
+                </div>
+                <div class="item-quantity">
+                    <span>Quantity:</span>
+                    <span>
+                        <%= item.quantity %>Kg
+                    </span>
+                </div>
+                <div class="item-actions">
+                    <button class="btn btn-primary">
+                        Add to Cart
+                    </button><br /><br />
+                    <form action="/trans" method="get">
+                        <button class="btn btn-secondary">
+                            Buy Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

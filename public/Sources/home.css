@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("https://c8.alamy.com/comp/2KFWB86/seeds-on-the-table-and-in-coconut-shell-seedlings-in-cardboard-container-soil-in-paper-bag-garden-tools-flat-lay-white-background-2KFWB86.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #3ce811;
+    text-shadow: 0 0 10px rgba(136, 222, 16, 0.2);
+    animation: fadeIn 2s;
+}
+
+.show-btn {
+    background-color: #ea6608;
+    color: #ebac0c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: bounceIn 2s;
+}
+
+.show-btn:hover {
+    background-color: #d99f4e;
+    animation: pulse 2s infinite;
+}
+
+.show-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(221, 94, 9, 0.768);
+    animation: bounceOut 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes bounceOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

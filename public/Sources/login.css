@@ -1,0 +1,185 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #5cd982;
+}
+
+.container {
+    width: 300px;
+    margin: 40px auto;
+    margin-top: 140px;
+    padding: 20px;
+    border-radius: 1rem;
+    background-color: #A0F3BD;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"]{
+    width: 90%;
+    height: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    display: inline;
+}
+
+button[type="submit"] {
+    width: 97%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+} */
+
+/* Global Styles */
+
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: url('https://cosmosmagazine.com/wp-content/uploads/2020/02/180606-agriculture-full.jpg') no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-out;
+    transition: background-position 0.5s ease-out;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #27ae60;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styles */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #9b59b6;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-out;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #2c3e50;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #1abc4b;
+    color: #de7c0c;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3bd843;
+  }
+  
+  /* Link Styles */
+  
+  a {
+    text-decoration: none;
+    color: #d93814;
+    transition: color 0.3s ease-out;
+  }
+  
+  a:hover {
+    color: #b63729;
+  }
+  
+  /* Animations */
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .container {
+      margin: 20px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+    input[type="email"],
+    input[type="password"] {
+      height: 30px;
+    }
+    input[type="submit"] {
+      height: 30px;
+    }
+  }
